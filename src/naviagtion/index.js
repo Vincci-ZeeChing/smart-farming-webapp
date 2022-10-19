@@ -1,11 +1,13 @@
 import {Outlet } from "react-router-dom";
-import {DefaultLayout} from "../layout";
+import Navbar from "../layout";
 
 const Navigation = () => {
     return (
         <>
-            <DefaultLayout/>
+            {/*<DefaultLayout/>*/}
+            <Navbar/>
             <Outlet />
+
         </>
     );
 };

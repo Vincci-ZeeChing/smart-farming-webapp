@@ -49,56 +49,51 @@ const Dashboard = () => {
 
 
     return (
-        <>
-        <Box bg='#E1F6F0' minH='100%' w='100%' color='black'>
+        <Box bg='black' w='100%' h='100%' >
             <SimpleGrid>
-                <Box bg='white' minH="80vh" style={{margin:'5vh'}}>
-
-                    <h1 style={{marginLeft:'3vh'}}>
-                        Dashboard
-                    </h1>
-
-                    <Box maxW="10xl" mx={'auto'} pt={5} px={{base: 2, sm: 12, md: 17}} style={{alignItems:'center'}}>
+                <Box bg='red' h='90%' style={{margin:'5vh'}} >
+                    <Box maxW="10xl" mx={'auto'} pt={5} px={{base: 2, sm: 12, md: 17}}  style={{margin:'5vh'}}  >
                         <SimpleGrid columns={{base: 1, md: 2}} spacing={{base: 5, lg: 8}}>
                             <Row>
                                 <Box maxW="10xl" mx={'auto'} pt={5} px={{base: 2, sm: 12, md: 17}}>
                                     <SimpleGrid columns={{base: 1, md: 4}} spacing={{base: 5, lg: 8}}>
-                                        <Row>
-                                            <Card
-                                                hoverable
-                                                title={
-                                                    <h3 style={{textAlign:"center", fontSize:"20px" }}>
-                                                        Soil
-                                                    </h3>
-                                                }
-                                                type="inner"
-                                                cover={
-                                                    <div style={{ overflow: "hidden", width: "100%" , height : "300px" }}>
-                                                        <img
-                                                            alt="example"
-                                                            style={{ height: "100%" }}
-                                                            src={soil}
-                                                        />
-                                                    </div>
-                                                }
-                                                style={{
-                                                    width: "100%",
-                                                }}
-                                            >
-                                                <p>Temperature:{soilSensorData.temperature}</p>
-                                                <p>Humidity:{soilSensorData.humidity}</p>
-                                                <p>Moisture:{soilSensorData.moisture}</p>
-                                            </Card>
-                                        </Row>
+                                        <Card
+                                            hoverable
+                                            title={
+                                                <h3 style={{textAlign:"center", fontSize:"25px" , fontStyle:'bold'}}>
+                                                    Soil
+                                                </h3>
+                                            }
+                                            type="inner"
+                                            cover={
+                                                <div style={{ overflow: "hidden", width: "100%" , height : "300px" }}>
+                                                    <img
+                                                        alt="example"
+                                                        style={{ height: "100%" }}
+                                                        src={soil}
+                                                    />
+                                                </div>
+                                            }
+                                            headStyle={{ backgroundColor: '#e7e7e7' }}
+                                            bodyStyle={{ backgroundColor: '#e7e7e7' }}
+                                            style={{
+                                                width: "100%",
+                                                borderRadius: "20px",
+                                                overflow: "hidden"
+                                            }}
+                                        >
+                                            <p>Temperature:{soilSensorData.temperature}</p>
+                                            <p>Humidity:{soilSensorData.humidity}</p>
+                                            <p>Moisture:{soilSensorData.moisture}</p>
+                                        </Card>
                                     </SimpleGrid>
                                 </Box>
                                 <Box maxW="10xl" mx={'auto'} pt={5} px={{base: 2, sm: 12, md: 17}}>
                                     <SimpleGrid columns={{base: 1, md: 4}} spacing={{base: 5, lg: 8}}>
-                                        <Row>
                                             <Card
                                                 hoverable
                                                 title={
-                                                    <h3 style={{textAlign:"center", fontSize:"20px"}}>
+                                                    <h3 style={{textAlign:"center", fontSize:"25px"}}>
                                                         Surrounding
                                                     </h3>
                                                 }
@@ -112,15 +107,18 @@ const Dashboard = () => {
                                                         />
                                                     </div>
                                                 }
+                                                headStyle={{ backgroundColor: '#e7e7e7' }}
+                                                bodyStyle={{ backgroundColor: '#e7e7e7' }}
                                                 style={{
-                                                    width: "100%"
+                                                    width: "100%",
+                                                    borderRadius: "20px",
+                                                    overflow: "hidden"
                                                 }}
                                             >
                                                 <p>Temperature:{surroundingSensorData.temperature}</p>
                                                 <p>Humidity:{surroundingSensorData.humidity}</p>
                                                 <p>Moisture:{surroundingSensorData.moisture}</p>
                                             </Card>
-                                        </Row>
                                     </SimpleGrid>
                                 </Box>
                             </Row>
@@ -129,12 +127,6 @@ const Dashboard = () => {
                 </Box>
             </SimpleGrid>
         </Box>
-
-
-
-        </>
-
-
     );
 };
 

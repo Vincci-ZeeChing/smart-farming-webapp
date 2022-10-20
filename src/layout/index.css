@@ -2,7 +2,7 @@
 
 .navbar {
     padding-bottom: 0;
-    border-bottom: solid 1px #e8e8e8;
+    border-bottom: solid 0 #e8e8e8;
     background-color: #71AF9D;
     /*box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.12),*/
     /*0 6px 16px -11px rgba(0, 0, 0, 0.08);*/

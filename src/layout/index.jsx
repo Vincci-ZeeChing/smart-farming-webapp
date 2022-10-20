@@ -124,6 +124,13 @@ const Navbar = () => {
                     </Layout.Header>
                 </Layout>
             </nav>
+            {/*<Layout>*/}
+            {/*    <Layout.Content>*/}
+            {/*        <Box bg='red' w='100%' h='100%' p={2} color='red' style={{height: '90.5vh'}}>*/}
+
+            {/*        </Box>*/}
+            {/*    </Layout.Content>*/}
+            {/*</Layout>*/}
         </Box>
     );
 };

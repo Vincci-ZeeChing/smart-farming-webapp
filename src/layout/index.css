@@ -93,6 +93,8 @@
     font-family: Bahnschrift SemiBold, serif;
 }
 
+
+
 @media (max-width: 767px) {
     .menuButton {
         display: block;
